@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic Tac Toe game</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <nav id="nav">
+      <ul>
+        Tic Tac Toe Game
+      </ul>
+      <ul>
+        <i class="fa fa-moon-o" id="dark" aria-hidden="true"></i>
+      </ul>
+    </nav>
+
+    <div class="gameContainer">
+      <div class="Box">
+        <div class="boxItems b-l b-t"><span class="boxList"></span></div>
+        <div class="boxItems b-t"><span class="boxList"></span></div>
+        <div class="boxItems b-r b-t"><span class="boxList"></span></div>
+        <div class="boxItems b-l"><span class="boxList"></span></div>
+        <div class="boxItems"><span class="boxList"></span></div>
+        <div class="boxItems b-r"><span class="boxList"></span></div>
+        <div class="boxItems b-l b-b"><span class="boxList"></span></div>
+        <div class="boxItems b-b"><span class="boxList"></span></div>
+        <div class="boxItems b-b b-r"><span class="boxList"></span></div>
+      </div>
+      <div class="gamedetails">
+        <h1>Welcome to Tic Tac Toe</h1>
+        <div class="textContainer">
+          <span class="title">Turn for X</span>
+          <button id="btn">Reset</button>
+        </div>
+        <div class="img">
+          <img src="./images/cong.gif" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,171 @@
+/* fonts  */
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Rubik:wght@500&display=swap");
+
+/* css reset  */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* background-color:rgb(252, 243, 224); */
+  background-color: #9feef4;
+  background-size: 306vh 100vw;
+  
+}
+
+/* Game navbar  */
+nav {
+  font-family: "Libre Baskerville", serif;
+  display: flex;
+  align-items: center;
+  color: #7af9ff;
+  padding: 2px 12px;
+  font-size: 1.8vw;
+  background-color: rgb(82 1 159);
+}
+
+/* nav's night mode  */
+nav ul i {
+  position: absolute;
+  top: 0px;
+  right: 25px;
+  border-radius: 12px;
+  cursor: pointer;
+  padding: 2px;
+}
+
+nav ul:hover {
+  color: white;
+}
+
+/* game container  */
+.gameContainer {
+  display: flex;
+  font-family: "Rubik", sans-serif;
+  justify-content: center;
+  margin-top: 15vh;
+  margin-right: 0vw;
+  position: relative;
+  color: #0a530a;
+}
+
+/* game grid  */
+.Box {
+  display: grid;
+  font-size: 5vw;
+  grid-template-columns: repeat(3, 10vw);
+  grid-template-rows: repeat(3, 10vw);
+}
+
+/* game grid's elements */
+.boxItems {
+  border: 2px solid #e5c8ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(68, 224, 217);
+}
+
+.boxItems:hover {
+  cursor: pointer;
+}
+
+/* game list  */
+
+/* utility classes */
+.b-l {
+  border-left: 0;
+}
+
+.b-r {
+  border-right: 0;
+}
+
+.b-t {
+  border-top: 0;
+}
+
+.b-b {
+  border-bottom: 0;
+}
+
+/* gameinfo */
+.gamedetails {
+  font-size: 12px;
+  align-items: center;
+  margin-left: 3vw;
+  font-family: "Rubik", sans-serif;
+}
+
+.gamedetails h1 {
+  font-size: 6vh;
+  margin: 2px 0px;
+  color: #98650b;
+}
+
+.title {
+  margin-right: 7vw;
+  color: #98650b;
+}
+
+/* reset button */
+#btn {
+  border-radius: 3px;
+  cursor: pointer;
+  color: #98650b;
+  padding: 2px 3px;
+  font-size: 4vh;
+  font-family: "Rubik", sans-serif;
+  background-color: yellow;
+  border: 1px solid rgb(212, 114, 53);
+}
+
+#btn:hover {
+  color: #7af9ff;
+  background-color: rgb(82 1 159);
+}
+
+/* gameinfo container */
+.textContainer {
+  font-family: "Rubik", sans-serif;
+  font-size: 4vh;
+  display: flex;
+  color: rgb(214, 9, 105);
+  justify-content: center;
+  align-items: top;
+  margin: 0px 22px;
+}
+
+/* for gif */
+.img img {
+  width: 0;
+  border-radius: 12px;
+  margin-left: 38px;
+  transition: 1s all ease;
+}
+
+/* Gameover alert */
+.alert {
+  position: aboslute;
+  width: 120vw;
+  height: 120vh;
+  left: 12vw;
+}
+
+@media screen and (max-width: 800px) {
+  .gameContainer {
+    flex-wrap: wrap;
+  }
+  .Box {
+    font-size: 9vh;
+    grid-template-columns: repeat(3, 17vw);
+    grid-template-rows: repeat(3, 17vw);
+    margin-bottom: 4vh;
+  }
+  .img img {
+    text-align: center;
+  }
+}
